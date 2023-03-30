@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "CIS Grade Totaler",
+  "version": "1.2",
+  "description": "Add grade totals and percent to CIS",
+  "content_scripts": [
+    {
+      "js": ["scripts/content.js"],
+      "matches": [
+        "https://cis.westpoint.edu/cis/Academic/CourseGradeBook.cfm?*"
+      ]
+    },
+    {
+      "js": ["scripts/gpa.js"],
+      "matches": [
+        "https://cis.westpoint.edu/cis/Academic/main_academic.cfm"
+      ]
+    }
+  ]
+}
