@@ -16,5 +16,12 @@
         "https://cis.westpoint.edu/cis/Academic/main_academic.cfm"
       ]
     }
-  ]
+  ],
+  "web_accessible_resources": [{ 
+  "resources": ["/course_data.json","/gpa_grades.json"],
+  "matches": [
+      "*://*.westpoint.edu/*"
+    ]
+  }]
+
 }
